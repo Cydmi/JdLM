@@ -1,0 +1,24 @@
+{
+    "name": "jd/jd-lianmeng",
+    "description": "联盟API",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "render",
+            "email": "19652109@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+     	 "php": ">=5.6"
+    },
+    "autoload":{
+        "psr-4":{
+            "JD\\":"src/"
+        }
+    },
+    "scripts": {
+        "test": "php test.php"
+    }
+}
