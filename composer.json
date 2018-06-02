@@ -1,6 +1,7 @@
 {
     "name": "jdm/jd-lianmeng",
-    "description": "联盟API",
+    "description": "jd联盟API",
+    "keywords": ["json", "jd", "api", "京东联盟api"],
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -11,7 +12,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-     	 "php": ">=5.6"
+          "php": ">=5.6"
     },
     "autoload":{
         "psr-4":{
