@@ -1,5 +1,6 @@
 <?php  
 namespace JD;
+use \Exception;
 class JdClient
 {
 	public $serverUrl = "http://gw.api.360buy.net/routerjson";
@@ -168,16 +169,16 @@ class JdClient
 			return $result;
 		}
 
-		//如果JD返回了错误码，记录到业务错误日志中
-		if (isset($respObject->code))
-		{
-			$logger = new LtLogger;
-			$logger->conf["log_file"] = rtrim(JD_SDK_WORK_DIR, '\\/') . '/' . "logs/top_biz_err_" . $this->appKey . "_" . date("Y-m-d") . ".log";
-			$logger->log(array(
-				date("Y-m-d H:i:s"),
-				$resp
-			));
-		}
+		// //如果JD返回了错误码，记录到业务错误日志中
+		// if (isset($respObject->code))
+		// {
+		// 	$logger = new LtLogger;
+		// 	$logger->conf["log_file"] = rtrim(JD_SDK_WORK_DIR, '\\/') . '/' . "logs/top_biz_err_" . $this->appKey . "_" . date("Y-m-d") . ".log";
+		// 	$logger->log(array(
+		// 		date("Y-m-d H:i:s"),
+		// 		$resp
+		// 	));
+		// }
 		return $respObject;
 	}
 
