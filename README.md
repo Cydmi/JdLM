@@ -5,7 +5,7 @@
 # Installation(with [Composer](https://getcomposer.org))
 
 ```sh
-composer require jd/jd-lianmeng
+composer require jdm/jd-lianmeng
 ```
 
 # Usage
