@@ -3,7 +3,7 @@ namespace JD;
 use \Exception;
 class JdClient
 {
-	public $serverUrl = "http://gw.api.360buy.net/routerjson";
+	public $serverUrl = "https://api.jd.com/routerjson";
 
 	public $accessToken;
 

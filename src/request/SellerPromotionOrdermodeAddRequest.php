@@ -20,18 +20,17 @@ class SellerPromotionOrdermodeAddRequest
 		$this->$key = $value;
 	}
                                                              	                        	                                                                                                                          private $promoId;
-                              public function setPromoId($promoId ){
+         public function setPromoId($promoId ){
                  $this->promoId=$promoId;
-                 $this->apiParas["#promo_id"] = $#promoId;
-              }
-
+                 $this->apiParas["#promo_id"] = $promoId;}
+                 
               public function getPromoId(){
               	return $this->promoId;
               }
                                                                                                                                                          private $favorMode;
                               public function setFavorMode($favorMode ){
                  $this->favorMode=$favorMode;
-                 $this->apiParas["#favor_mode"] = $#favorMode;
+                 $this->apiParas["#favor_mode"] = $favorMode;
               }
 
               public function getFavorMode(){
@@ -76,11 +75,11 @@ class SellerPromotionOrdermodeAddRequest
                                                                                                                                                          private $link;
                               public function setLink($link ){
                  $this->link=$link;
-                 $this->apiParas["#link"] = $#link;
+                 $this->apiParas["#link"] = $link;
               }
 
               public function getLink(){
-              	return $this->link;
+              	return $this->$link;
               }
                                                                                                                                         	}
 
